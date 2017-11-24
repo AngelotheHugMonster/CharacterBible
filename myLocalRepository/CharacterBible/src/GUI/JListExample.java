@@ -15,6 +15,7 @@ import javax.swing.JCheckBoxMenuItem;
 public class JListExample extends JFrame {
     private JList<String> countryList;
     public JListExample() {
+    	setResizable(false);
         //create the model and add elements
         DefaultListModel<String> listModel = new DefaultListModel<>();
         listModel.addElement("USA");
@@ -29,9 +30,11 @@ public class JListExample extends JFrame {
  
         //create the list
         countryList = new JList<>(listModel);
+        listModel.addElement("before add");
         countryList.setBounds(100, 0, 100, 178);
         countryList.setBackground(Color.LIGHT_GRAY);
         getContentPane().add(countryList);
+        listModel.addElement("after add");
         
         JMenuBar menuBar = new JMenuBar();
         menuBar.setToolTipText("why");
