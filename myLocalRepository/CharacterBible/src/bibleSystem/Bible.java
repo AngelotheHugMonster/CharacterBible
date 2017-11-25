@@ -25,6 +25,14 @@ public class Bible
 	////////////////////
 	//Test Methods
 	////////////////////
+	public LinkedList<Entry> getEntryList()
+	{
+		return this.entries;
+	}
+	
+	////////////////////
+	//Test Methods
+	////////////////////
 	public void testPrint()
 	{
 		for(Entry e: entries)
