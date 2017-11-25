@@ -23,7 +23,7 @@ public class Bible
 	}
 	
 	////////////////////
-	//Test Methods
+	//Getters
 	////////////////////
 	public LinkedList<Entry> getEntryList()
 	{
